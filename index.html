@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Word Guessing Clone</title>
+</head>
+<body>
+    <div id="navbar" class="flex justify-center border-b-2 border-white-400 pt-6 pb-6"><h1 class="md:text-2xl">Jerry's Word Guessing Game</h1></div>
+    <div id="button-group" class="flex flex-col items-center md:flex-row justify-center gap-4 mt-8">
+        <button id="3" class="wordButton bg-black-500 hover:bg-zinc-700 text-white font-bold py-2 px-4 rounded border-2 border-white-400">3 Letter Word</button>
+        <button id="4" class="wordButton bg-black-500 hover:bg-zinc-700 text-white font-bold py-2 px-4 rounded border-2 border-white-400">4 Letter Word</button>
+        <button id="5" class="wordButton bg-black-500 hover:bg-zinc-700 text-white font-bold py-2 px-4 rounded border-2 border-white-400">5 Letter Word</button>
+        <button id="6" class="wordButton bg-black-500 hover:bg-zinc-700 text-white font-bold py-2 px-4 rounded border-2 border-white-400">6 Letter Word</button>
+    </div>
+    <div id="grid1" class="flex flex-row justify-center gap-2"></div>
+    <div id="grid2" class="flex flex-row justify-center gap-2"></div>
+    <div id="grid3" class="flex flex-row justify-center gap-2"></div>
+    <div id="grid4" class="flex flex-row justify-center gap-2"></div>
+    <div id="grid5" class="flex flex-row justify-center gap-2"></div>
+    <div id="keyboard" class="mt-8 flex flex-col">
+        <div id="keyboardrow3" class="flex flex-row justify-center mt-8">
+            <div class="key" id="q" onclick="setLetter(this.id)">Q</div>
+            <div class="key" id="w" onclick="setLetter(this.id)">W</div>
+            <div class="key" id="e" onclick="setLetter(this.id)">E</div>
+            <div class="key" id="r" onclick="setLetter(this.id)">R</div>
+            <div class="key" id="t" onclick="setLetter(this.id)">T</div>
+            <div class="key" id="y" onclick="setLetter(this.id)">Y</div>
+            <div class="key" id="u" onclick="setLetter(this.id)">U</div>
+            <div class="key" id="i" onclick="setLetter(this.id)">I</div>
+            <div class="key" id="o" onclick="setLetter(this.id)">O</div>
+            <div class="key" id="p" onclick="setLetter(this.id)">P</div>
+        </div>
+        <div id="keyboardrow2" class="flex flex-row justify-center">
+            <div class="key" id="a" onclick="setLetter(this.id)">A</div>
+            <div class="key" id="s" onclick="setLetter(this.id)">S</div>
+            <div class="key" id="d" onclick="setLetter(this.id)">D</div>
+            <div class="key" id="f" onclick="setLetter(this.id)">F</div>
+            <div class="key" id="g" onclick="setLetter(this.id)">G</div>
+            <div class="key" id="h" onclick="setLetter(this.id)">H</div>
+            <div class="key" id="j" onclick="setLetter(this.id)">J</div>
+            <div class="key" id="k" onclick="setLetter(this.id)">K</div>
+            <div class="key" id="l" onclick="setLetter(this.id)">L</div>    
+        </div>
+        <div id="keyboardrow1" class="flex flex-row justify-center">
+            <div class="key" id="z" onclick="setLetter(this.id)">Z</div>
+            <div class="key" id="x" onclick="setLetter(this.id)">X</div>
+            <div class="key" id="c" onclick="setLetter(this.id)">C</div>
+            <div class="key" id="v" onclick="setLetter(this.id)">V</div>
+            <div class="key" id="b" onclick="setLetter(this.id)">B</div>
+            <div class="key" id="n" onclick="setLetter(this.id)">N</div>
+            <div class="key" id="m" onclick="setLetter(this.id)">M</div>   
+        </div>
+        <div id="keyboardrow0" class="flex flex-row justify-center">
+            <div class="keylong" id="Enter" onclick="">Enter</div>
+            <div class="keylong" id="Backspace" onclick="">Delete</div>
+        </div>
+    </div>
+</body>
+</html>
